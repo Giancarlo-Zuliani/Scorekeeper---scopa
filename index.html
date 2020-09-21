@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Il segnapunti scopa</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="head">
+      <h1><strong>Segna punti</strong></h1>
+    </div>
+
+ <div class="pointbox">
+
+    <div class="team one">
+        <div class="teamname" id ="team1name"></div>
+        <ol class="pointlist"id="team1list">
+          <li id="team1round1"></li>
+          <li id="team1round2"></li>
+          <li id="team1round3"></li>
+          <li id="team1round4"></li>
+          <li id="team1round5"></li>
+          <li id="team1round6"></li>
+        </ol>
+        <p>Totale: <span class="result team1"></span></p>
+   </div>
+
+   <div class="team two">
+     <div class="teamname" id="team2name"></div>
+        <ol class="pointlist" id="team2list">
+          <li id="team2round1"></li>
+          <li id="team2round2"></li>
+          <li id="team2round3"></li>
+          <li id="team2round4"></li>
+          <li id="team2round5"></li>
+          <li id="team2round6"></li>
+        </ol>
+        <p>Totale: <span class="result team2"></span></p>
+   </div>
+
+ </div>
+
+ <div class="console">
+     <span class="consolename" id="teamonename"></span> <span class="consolename" id="teamtwoname"></span>
+     <input class= "pointinput" id="addNum"  type="number" name="" value="">
+     <input class= "pointinput" id="addNum2" type="number" name="" value="">
+     <button class="addbut" id="adding"type="button" name="button">conferma punti</button>
+     <button id="undo" type="button" name="button">ritorna</button>
+     <button id="reset" type="button" name="button">nuova partita</button>
+ </div>
+
+ <div class="primiera">
+
+   <div class="prrow">
+
+     <select class="pc2" id="den1">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc2" id="spad1">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc2" id="cop1">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc2" id="bas1">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+   </div>
+
+   <div class="icon">
+     <img id="denari"src="img/denari.jpg" alt="">
+     <img id="spade"src="img/spade.jpg" alt="">
+     <img id="coppe"src="img/coppe.jpg" alt="">
+     <img id="bastoni"src="img/bastoni.jpg" alt="">
+   </div>
+
+   <div class="prrow2">
+
+     <select class="pc" id="den2">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc" id = 'spad2'>
+       <option  value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc" id="cop2">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+     <select class="pc" id="bas2">
+       <option value="21">Sette</option>
+       <option value="18">Sei</option>
+       <option value="16">Asso</option>
+       <option value="15">Cinque</option>
+       <option value="14">Quattro</option>
+       <option value="13">Tre</option>
+       <option value="12">Due</option>
+       <option value="10">Figura</option>
+     </select>
+
+   </div>
+
+   <button id="calcprim"type="button" name="button">calcola</button>
+   <button id="calcprimreset"type="button" name="button">reset</button>
+   <span class="totpri upper">TOT: <span id="tot1"></span></span>
+   <span class="totpri down">TOT: <span id="tot2"></span></span>
+
+   <div class="slider">
+      <i class="arrow"></i>
+   </div>
+
+ </div>
+
+  <span id="credit">Powered by "15+18!=36"</span>
+
+  <script src="point.js" charset="utf-8"></script>
+ </body>
+</html>
